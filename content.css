@@ -1,0 +1,69 @@
+.delete-all-runs-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.delete-all-runs-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #da3633;
+  box-shadow: 0 0 transparent;
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition-property: color, background-color, border-color;
+  margin-right: 8px;
+}
+
+.delete-all-runs-btn:hover {
+  background-color: #b62324;
+}
+
+.delete-all-runs-btn:disabled {
+  background-color: #86061d;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
+}
+
+.delete-all-runs-btn svg {
+  fill: currentColor;
+}
+
+.delete-all-runs-progress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  margin-right: 8px;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.delete-all-runs-progress-bar-container {
+  width: 200px;
+  height: 8px;
+  background-color: #30363d;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.delete-all-runs-progress-bar {
+  height: 100%;
+  background-color: #da3633;
+  border-radius: 6px;
+  transition: width 0.2s ease;
+}
+
+.delete-all-runs-progress-text {
+  font-variant-numeric: tabular-nums;
+}
